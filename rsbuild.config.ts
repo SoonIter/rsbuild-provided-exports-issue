@@ -10,9 +10,7 @@ export default defineConfig({
   tools: {
     rspack(config) {
       // @ts-ignore
-      config.optimization.mangleExports = false
-      // @ts-ignore
-      config.optimization.providedExports = false
+      // config.optimization.providedExports = false
     }
   }
 });
