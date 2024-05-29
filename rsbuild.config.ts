@@ -8,9 +8,11 @@ export default defineConfig({
     writeToDisk: true
   },
   tools: {
-    rspack(config) {
-      // @ts-ignore
-      // config.optimization.providedExports = false
+    rspack(config, { env }) {
+      // if (env === 'development') {
+      //   // @ts-ignore
+      //   config.optimization.usedExports = false
+      // }
     }
   }
 });
